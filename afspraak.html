@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tandartsafspraak</title>
+    </head>
+        <body>
+            <h1>Afspraak maken?</h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mi augue, luctus a libero nec, condimentum accumsan leo. Aenean et mi ut ligula rhoncus consequat sit amet auctor eros. Donec egestas tortor vel ante lacinia posuere. Phasellus turpis enim, hendrerit vel eros sit amet, posuere sagittis velit. Vivamus aliquam euismod interdum. Integer rhoncus mollis diam, at facilisis neque facilisis sed. Mauris sagittis tristique scelerisque. Donec vitae lorem at neque dictum dictum a sed massa. Fusce lectus tortor, gravida lacinia imperdiet a, sollicitudin id ante. Mauris et congue mauris, sit amet aliquet mauris. Sed libero leo, aliquam vitae odio vel, accumsan pretium justo. Pellentesque congue nisl in lorem venenatis dignissim. Nam velit tortor, auctor a quam vel, ornare consectetur nulla. Quisque a consequat metus, eu fermentum nisi. Maecenas ultrices gravida maximus.
+            </p>
+            <figure>
+                <img    src="lelijke_tanden.jpg"
+                        alt="lelijke tanden" title="lelijke tanden"
+                        width="300" height="300">
+                <img    src="geen _tanden.jpg"
+                        alt="geen tanden" title="geen tanden"
+                        width="300" height="300">
+                <img    src="mooie_tanden.jpg"
+                        alt="mooie tanden" title="mooie tanden"
+                        width="300" height="300">
+            <figcaption>Poets 2 x daags je tanden!</figcaption>
+            </figure>
+            <form id="contactform" action="https://formspree.io/f/mwkjpjey" method="post">
+                <fieldset>
+                    <legend>Persoonlijke gegevens</legend><br>
+                    <label for="naam">Naam:</label>
+                    <input id="naam" type="text" name="naam"><br><br>
+                    <input type="radio" name="geslacht" value="man" checked>Man
+                    <input type="radio" name="geslacht" value="vrouw">Vrouw
+                    <input type="radio" name="geslacht" value="anders">Anders <br><br>
+                    <label for="adres">Adres:</label>
+                    <input type="text" id="adres" name="adres"><br><br>
+                    <label for="postcode">Postcode:</label>
+                    <input type="text" id="postcode" name="postcode"><br><br>
+                    <label for=" woonplaats">Woonplaats:</label>
+                    <input type="text" id="woonplaats" name="woonplaats"><br><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Beschrijving van de klachten</legend><br>
+                        <b> Selecteer een klacht</b><br>
+                            <input type="checkbox" name="onderwerpen" value="Gaatjes">Gaatjes
+                            <input type="checkbox" name="onderwerpen" value="Verstandkies">Verstandkies
+                            <input type="checkbox" name="onderwerpen" value="Wortelkanaalbehandeling">Wortelkanaalbehandeling
+                            <input type="checkbox" name="onderwerpen" value="Beugel">Beugel 
+                            <label for="foto">Selecteer een foto</label>
+                            <input type="file" id="foto" name="foto"><br><br>
+                </fieldset>    
+                <fieldset>
+                    <legend>Toelichting van de klachten</legend><br>
+                    <textarea name="toelichting" maxlength="500"></textarea>
+                    <b>Wanneer wilt u een afspraak</b>
+                    <input type="date" name="datum" max="2080-12-31">
+                </fieldset> 
+                <input type="email" name="_replyto" placeholder="Uw email"> 
+                <input type="submit" value="Verzend">
+            </form>
+        </body>
+</html>
